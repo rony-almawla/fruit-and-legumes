@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits and Legumes App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fruits and Legumes App</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container mt-5">
+            <div class="upperSide" style="background-color: blue; padding: 10px; margin-bottom: 10px; height: 70px;">
+                <div class="input-group mb-5">
+                    <input type="text" id="itemInput" class="form-control" placeholder="Fruits or Legumes" style="width: 70px;">
+                    <div class="input-group-append" style="margin-left: 10px;">
+                        <div class="input-group-text radio-container" style="margin-right: 10px;">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="itemType" id="fruitRadio" value="fruit">
+                                <label class="form-check-label" for="fruitRadio">Fruits</label>
+                            </div>
+                        </div>
+                        <div class="input-group-text radio-container">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="itemType" id="legumeRadio" value="legume">
+                                <label class="form-check-label" for="legumeRadio">Legumes</label>
+                            </div>
+                        </div>
+                        <button id="addSpecificBtn" class="btn btn-primary">Add to specific list</button>
+                        <button id="addGeneralBtn" class="btn btn-danger">Add to general list</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bottomSide" style="background-color: blue; padding: 10px; margin-bottom: 10px; height: auto;">
+                <div class="form-group input-group">
+                    <input type="text" id="searchInput" class="form-control" placeholder="Search for a fruit or legume">
+                    <div class="input-group-append">
+                        <button id="searchBtn" class="btn btn-info">Search</button>
+                        <button id="deleteBtn" class="btn btn-danger">Delete</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4>List of Fruits</h4>
+                        <ul id="fruitList" class="list-group"></ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>List of Fruits & Legumes</h4>
+                        <ul id="generalList" class="list-group"></ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>List of Legumes</h4>
+                        <ul id="legumeList" class="list-group"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
